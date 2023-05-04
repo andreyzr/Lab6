@@ -4,23 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PW1
+namespace HW1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string str=Console.ReadLine();
-            string[]strArray=str.Split();
-            string min = strArray[0];
-            foreach(string s in strArray)
+            string str = Console.ReadLine();
+            string[] strArray = str.Split();
+            string  max = strArray[0];
+            foreach (string s in strArray)
             {
-                if (s.Length<min.Length)
+                if (s.Length > max.Length)
                 {
-                    min = s;
+                    max = s;
                 }
             }
-            Console.WriteLine(min);
+            Console.WriteLine(max);
             Console.ReadKey();
         }
     }

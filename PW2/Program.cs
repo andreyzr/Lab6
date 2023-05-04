@@ -4,23 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PW1
+namespace PW2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             string str=Console.ReadLine();
-            string[]strArray=str.Split();
-            string min = strArray[0];
-            foreach(string s in strArray)
+            string str2 = "";
+            foreach(char c in str)
             {
-                if (s.Length<min.Length)
-                {
-                    min = s;
-                }
+                str2=c+str2;
             }
-            Console.WriteLine(min);
+            Console.WriteLine(str2);
             Console.ReadKey();
         }
     }
